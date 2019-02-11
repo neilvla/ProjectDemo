@@ -1,0 +1,40 @@
+﻿body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-brand {
+    color: #ffffff;
+}
+
+    .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+        color: rgb(128, 128, 128);
+    }
+
+.bg-white {
+    background-color: #000 !important;
+}
+
+.text-dark {
+    color: #fff !important;
+}
+
+a {
+    color: #60a3eb;
+}
+
+    a .text-dark:focus, a.text-dark:hover {
+        color: #808080 !important;
+    }
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgb(128, 128, 128);
+}
