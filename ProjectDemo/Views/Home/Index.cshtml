@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+}
+
+<h1>@environment</h1>
+<div class="row">
+    <div class="col-sm-12">
+        <environment include="Development">
+            <div class="alert alert-danger">It is displayed in the @environment environment</div>
+        </environment>
+        <environment include="Staging">
+            <div class="alert alert-dark">It is displayed in the @environment environment</div>
+        </environment>
+        <environment include="Production">
+            <div class="alert alert-info">It is displayed in the @environment environment</div>
+        </environment>
+    </div>
+</div>
