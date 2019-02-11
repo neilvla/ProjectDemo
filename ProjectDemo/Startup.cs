@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ProjectDemo.Middleware;
 
 namespace ProjectDemo
 {
@@ -20,7 +19,6 @@ namespace ProjectDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddSingleton<IService, NewService>();
             var conn = Configuration.GetConnectionString("asea_db");
         }
 
